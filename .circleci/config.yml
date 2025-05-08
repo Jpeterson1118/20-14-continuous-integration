@@ -22,4 +22,7 @@ workflows:
       - start-server
     cypress/run:
       - name: run-component-tests
-      - cypress-command: npm cypress run --component
+      - cypress-command: npx cypress run --component
+
+      version: 2.1
+# Make sure to add MONGODB_URI to ENVIRONMENT VARIABLES in CircleCI so that the tests can connect to the database
